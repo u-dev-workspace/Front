@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
 import DoctorDashboard from "./pages/DoctorDashboard";
 import ChiefDoctorDashboard from "./pages/ChiefDoctorDashboard";
 import SupervisorLogin from "./pages/SupervisorLogin";
 import SupervisorDashboard from "./pages/SupervisorDashboard";
+import DoctorLogin from "./pages/DoctorLogin";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<SupervisorLogin />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<DoctorLogin />} />
         <Route path="/doctor" element={<DoctorDashboard />} />
         <Route path="/chief-doctor" element={<ChiefDoctorDashboard />} />
         <Route path="/supervisor" element={<SupervisorDashboard />} />
