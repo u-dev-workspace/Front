@@ -5,38 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51a8e747-d4e0-4541-a2fb-9321f713eade" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hakaton-front/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hakaton-front/pages/AppointmentButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hakaton-front/pages/ChiefDoctorDashboard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hakaton-front/pages/DoctorDashboard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hakaton-front/pages/DoctorLogin.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hakaton-front/pages/SupervisorDashboard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hakaton-front/pages/SupervisorLogin.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hakaton-front/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ChiefDoctorDashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DoctorDashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/DoctorLogin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SupervisorDashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SupervisorLogin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/76ed02dd3eb72d0cc6fe3392d9dd86bebf6df143" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/76ed02dd3eb72d0cc6fe3392d9dd86bebf6df143" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b4228a7d8caf9ecdad741421a307af4ec8f6d3d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b4228a7d8caf9ecdad741421a307af4ec8f6d3d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0d4f458d33437342ce1e763354b594690cabeba" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0d4f458d33437342ce1e763354b594690cabeba" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/pages/SupervisorLogin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/pages/SupervisorLogin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/src/main.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +79,7 @@
       <workItem from="1741150927336" duration="1209000" />
       <workItem from="1741166369420" duration="7619000" />
       <workItem from="1741176444738" duration="2159000" />
-      <workItem from="1741188943037" duration="1473000" />
+      <workItem from="1741188943037" duration="3658000" />
     </task>
     <servers />
   </component>

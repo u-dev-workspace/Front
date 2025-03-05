@@ -1,10 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import SupervisorLogin from "../pages/SupervisorLogin.jsx";
 import SupervisorDashboard from "../pages/SupervisorDashboard.jsx";
 import DoctorLogin from "../pages/DoctorLogin.jsx";
 import DoctorDashboard from "../pages/DoctorDashboard.jsx";
 import ChiefDoctorDashboard from "../pages/ChiefDoctorDashboard.jsx";
-
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
     return (
         <Router>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_URL = import.meta.env.REACT_APP_API_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 
 const AppointmentModal = ({ isOpen, onClose, userId }) => {
     const [doctors, setDoctors] = useState([]);
@@ -55,7 +55,7 @@ const AppointmentModal = ({ isOpen, onClose, userId }) => {
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-[#0000009c]">
             <div className="bg-white p-6 rounded-lg shadow-lg w-96 relative">
                 <h2 className="text-xl font-semibold mb-4">Запись к врачу</h2>
 

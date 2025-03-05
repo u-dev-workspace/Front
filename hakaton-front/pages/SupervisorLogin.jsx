@@ -12,12 +12,12 @@ const SupervisorLogin = () => {
       const token = localStorage.getItem("token");
       if (!token) {
         console.log("Токен отсутствует, редирект на /login");
-        setTimeout(() => navigate("/login"), 0);
+        setTimeout(() => navigate("/"), 0);
         return;
       }
 
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/auth/check-auth`, {
+          const response = await fetch(`${import.meta.env.VITE_API_URL}/auth/check-auth`, {
           method: "GET",
           headers: { "Authorization": `Bearer ${token}` },
         });
@@ -75,7 +75,7 @@ const SupervisorLogin = () => {
 
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center w-[100%] h-auto justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-6 rounded-lg shadow-md w-96">
         <h2 className="text-2xl font-bold mb-4 text-center">Вход для супервизора</h2>
         {error && <p className="text-red-500 text-center">{error}</p>}

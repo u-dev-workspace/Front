@@ -16,7 +16,7 @@ const DoctorLogin = () => {
       }
 
       try {
-        const response = await fetch(`${import.meta.env.REACT_APP_API_URL}/auth/check-auth`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/auth/check-auth`, {
           method: "GET",
           headers: {
             "Authorization": `Bearer ${token}`
@@ -42,7 +42,7 @@ const DoctorLogin = () => {
   }, [navigate]);
   const handleLogin = async () => {
     try {
-      const response = await fetch(`${import.meta.env.REACT_APP_API_URL}/auth/login/doctor`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/auth/login/doctor`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(credentials),

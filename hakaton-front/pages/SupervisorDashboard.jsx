@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import AppointmentButton from "./AppointmentButton.jsx";
+import AssignToHospitalButton from "./AssignToHospitalButton.jsx";
 
-const API_URL = import.meta.env.REACT_APP_API_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 
 
 const SearchableTable = ({ title, endpoint, searchEndpoint, columns, renderRow }) => {
@@ -50,13 +51,28 @@ const SearchableTable = ({ title, endpoint, searchEndpoint, columns, renderRow }
             console.log(`Search result for ${query}:`, response.data); // Debug log
             const result = response.data;
 
-            if (Array.isArray(result.users)) {
-                setData(result.users);
-            } else if (typeof result.users === "object") {
-                setData([result.users]); // Wrap single object in array
-            } else {
-                setData([]);
+            let newData = [];
+
+            if (Array.isArray(result.hospitals)) {
+                newData = result.hospitals;
+            } else if (typeof result.hospitals === "object") {
+                newData = [result.hospitals]; // Оборачиваем в массив
             }
+
+            if (Array.isArray(result.users)) {
+                newData = result.users;
+            } else if (typeof result.users === "object") {
+                newData = [result.users];
+            }
+
+            if (Array.isArray(result.doctors)) {
+                newData = result.doctors;
+            } else if (typeof result.doctors === "object") {
+                newData = [result.doctors];
+            }
+
+            // Обновляем данные
+            setData(newData);
         } catch (error) {
             console.error("Ошибка поиска: ", error);
             setData([]);
@@ -108,11 +124,11 @@ const PatientsTable = () => (
               <td className="p-2">{patient.fname}</td>
               <td className="p-2">{patient.phone || "Не указан"}</td>
               <td className="p-2">{patient.iin || "Не указан"}</td>
-              <td className="p-2">{Array.isArray(patient.hospital) ? patient.hospital.map(h => h.name).join(", ") : "Нет"}</td>
-              <td className="p-2">{Array.isArray(patient.doctor) ? patient.doctor.map(d => d.fname).join(", ") : "Нет"}</td>
+              <td className="p-2">{Array.isArray(patient.hospital) ? patient.hospital.map(h => h.name).join(" | ") : "Нет"}</td>
+              <td className="p-2">{Array.isArray(patient.doctor) ? patient.doctor.map(d => d.fname).join(" | ") : "Нет"}</td>
               <td className="p-2 flex space-x-2">
                   <AppointmentButton userId={patient._id} />
-                <button className="px-2 py-1 bg-blue-500 text-white rounded">Привязать к больнице</button>
+                  <AssignToHospitalButton userId={patient._id} userType="patient" />
               </td>
             </tr>
         )}
@@ -130,9 +146,9 @@ const DoctorsTable = () => (
               <td className="p-2">{doctor.fname}</td>
               <td className="p-2">{doctor.phone || "Не указан"}</td>
               <td className="p-2">{doctor.speciality}</td>
-              <td className="p-2">{Array.isArray(doctor.hospital) ? doctor.hospital.map(h => h.name).join(", ") : "Нет"}</td>
+              <td className="p-2">{Array.isArray(doctor.hospital) ? doctor.hospital.map(h => h.name).join(" | ") : "Нет"}</td>
               <td className="p-2">
-                <button className="px-2 py-1 bg-blue-500 text-white rounded">Привязать к больнице</button>
+                  <AssignToHospitalButton userId={doctor._id} userType="doctor" />
               </td>
             </tr>
         )}
