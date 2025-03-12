@@ -29,13 +29,9 @@ W
 'hakaton-front/pages/DoctorDashboard.jsx,5\5\5576223f7e36ad521c3be448f3d6f573a1e28c7b
 O
 hakaton-front/public/index.html,5\2\5297f295cff5c52d9207a75bca88637dec30b6bd
-A
-package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 H
 hakaton-front/.gitignore,0\b\0b586675ec105a8c7b24a6d3c41d5c5b4d22cfe1
 R
 "hakaton-front/src/assets/react.svg,c\3\c38977c58a7d9407c78643149b15173f604aa9ef
-]
--hakaton-front/pages/AssignToHospitalModal.jsx,0\c\0cf84f6c3d59b847aefd54795bf0f6421d27ee38
 ^
 .hakaton-front/pages/AssignToHospitalButton.jsx,6\e\6e6ff9b3f0f3b2443b7b5ce68569b0e5755df7a4
