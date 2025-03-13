@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import {toast} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -33,21 +35,29 @@ const AppointmentModal = ({ isOpen, onClose, userId }) => {
 
     const handleAppointment = async () => {
         if (!selectedDoctor || !appointmentDate) {
-            alert("Выберите врача и дату!");
+            toast.error("Проверьте коректность данных", { position: "top-right", autoClose: 3000 });
             return;
         }
 
         try {
+            const token = localStorage.getItem("token");
+
             await axios.post(
                 `${API_URL}/admin/addAppointment`,
                 { doctorId: selectedDoctor._id, userId, dateTime: appointmentDate },
-                { withCredentials: true }
+                {
+                    withCredentials: true,
+                    headers: {
+                        Authorization: `Bearer ${token}`
+                    }
+                }
             );
 
-            alert("Пациент успешно записан к врачу!");
+            toast.success("Пациент успешно записан", { position: "top-right", autoClose: 3000 });
             onClose();
         } catch (error) {
-            alert("Ошибка при записи на приём.");
+            toast.error("Ошибка создания записи", { position: "top-right", autoClose: 3000 });
+            onClose();
             console.error(error);
         }
     };

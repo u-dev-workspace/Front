@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import {toast} from "react-toastify";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -23,6 +24,7 @@ const AssignToHospitalButton = ({ userId, userType }) => {
             setHospitals(response.data.hospitals || []);
         } catch (error) {
             console.error("Ошибка при загрузке больниц:", error);
+
             setHospitals([]);
         }
     };
@@ -36,14 +38,18 @@ const AssignToHospitalButton = ({ userId, userType }) => {
         const endpoint = userType === "doctor" ? "/admin/addDoctorToHospital" : "/admin/addUserToHospital";
 
         try {
-            await axios.post(`${API_URL}${endpoint}`, { userId, hospitalId: selectedHospital }, { withCredentials: true });
+            const token = localStorage.getItem("token");
+            await axios.post(`${API_URL}${endpoint}`, { userId, hospitalId: selectedHospital }, {
+                withCredentials: true,
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }});
+            toast.success("Пациент добавлен", { position: "top-right", autoClose: 3000 });
             setIsOpen(false);
-            window.location.reload();
-
         } catch (error) {
             console.error("Ошибка при привязке:", error);
+            toast.error("Ошибка при привязке пользователя", { position: "top-right", autoClose: 3000 });
             setError("Не удалось привязать к больнице.");
-            window.location.reload();
         } finally {
             setLoading(false);
         }

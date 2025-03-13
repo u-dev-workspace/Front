@@ -35,3 +35,13 @@ R
 "hakaton-front/src/assets/react.svg,c\3\c38977c58a7d9407c78643149b15173f604aa9ef
 ^
 .hakaton-front/pages/AssignToHospitalButton.jsx,6\e\6e6ff9b3f0f3b2443b7b5ce68569b0e5755df7a4
+V
+&hakaton-front/pages/MyHospitalPage.jsx,3\8\38db6b25e03f1f38d4ac7e72ea8a08deccd69cde
+V
+&hakaton-front/pages/SupervisorInfo.jsx,e\8\e875e719e2969a78c793332f3cdd5ea15374e2a9
+Y
+)hakaton-front/pages/RecipeModalButton.jsx,4\6\4604e98fab2c062924c962ffd532fc5d8448de6d
+P
+ hakaton-front/pages/UserStat.jsx,1\1\117026cb061c88a8d5a51f2c6c861c0463fe69c2
+V
+&hakaton-front/pages/UserStatistics.jsx,7\5\75e06e9630ec9ceb894366f81ae1160ff085fcdd

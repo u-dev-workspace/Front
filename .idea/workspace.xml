@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51a8e747-d4e0-4541-a2fb-9321f713eade" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/hakaton-front/pages/MyHospitalPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hakaton-front/pages/SupervisorInfo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hakaton-front/pages/hospital.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e6ff9b3f0f3b2443b7b5ce68569b0e5755df7a4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e6ff9b3f0f3b2443b7b5ce68569b0e5755df7a4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b4228a7d8caf9ecdad741421a307af4ec8f6d3d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b4228a7d8caf9ecdad741421a307af4ec8f6d3d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0d4f458d33437342ce1e763354b594690cabeba" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0d4f458d33437342ce1e763354b594690cabeba" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/pages/AppointmentButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/pages/AppointmentButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/pages/AssignToHospitalButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/pages/AssignToHospitalButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/pages/SupervisorDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/pages/SupervisorDashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/src/App.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -33,21 +48,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/workspace/Front/hakaton-front/pages",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\workspace\Front\hakaton-front\pages" />
@@ -72,7 +88,11 @@
       <workItem from="1741188943037" duration="9420000" />
       <workItem from="1741278068617" duration="1423000" />
       <workItem from="1741758080003" duration="1934000" />
-      <workItem from="1741773516153" duration="1071000" />
+      <workItem from="1741773516153" duration="1988000" />
+      <workItem from="1741791576148" duration="598000" />
+      <workItem from="1741853284245" duration="4000" />
+      <workItem from="1741853293715" duration="3465000" />
+      <workItem from="1741860869402" duration="10524000" />
     </task>
     <servers />
   </component>
