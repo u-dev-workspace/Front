@@ -14,13 +14,17 @@ const DoctorDashboard = () => {
   const [filteredPatients, setFilteredPatients] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedDate, setSelectedDate] = useState(new Date());
+  const [doctorData, setDoctorData] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
+  
   useEffect(() => {
     const fetchData = async () => {
+      setIsLoading(true);
       try {
         const token = localStorage.getItem("token");
 
-        const [appointmentsRes, patientsRes] = await Promise.all([
+        const [appointmentsRes, patientsRes, doctorDataRes] = await Promise.all([
           axios.get(`${API_URL}/doctor/getUpcomingAppointments`, {
             withCredentials: true,
             headers: { Authorization: `Bearer ${token}` },
@@ -29,20 +33,26 @@ const DoctorDashboard = () => {
             withCredentials: true,
             headers: { Authorization: `Bearer ${token}` },
           }),
+          axios.get(`${API_URL}/doctor/getDoctorData`, {
+            withCredentials: true,
+            headers: { Authorization: `Bearer ${token}` },
+          }),
         ]);
 
         setAppointments(appointmentsRes.data.appointments || []);
         setPatients(patientsRes.data || []);
         setFilteredPatients(patientsRes.data || []);
+        setDoctorData(doctorDataRes.data || null);
       } catch (error) {
         console.error("Ошибка загрузки данных:", error);
+      } finally {
+        setIsLoading(false);
       }
     };
 
     fetchData();
   }, []);
 
-  // 🔥 Группируем записи по дате (используем `dateTimeISO` вместо `dateTime`)
   const groupedAppointments = useMemo(() => {
     return appointments.reduce((acc, appointment) => {
       if (!appointment.dateTimeISO) {
@@ -56,14 +66,13 @@ const DoctorDashboard = () => {
         return acc;
       }
 
-      const dateString = date.format("YYYY-MM-DD"); // Преобразуем в строку для группировки
+      const dateString = date.format("YYYY-MM-DD");
       if (!acc[dateString]) acc[dateString] = [];
       acc[dateString].push(appointment);
       return acc;
     }, {});
   }, [appointments]);
 
-  // 🔍 Функция поиска пациентов
   const handleSearch = (e) => {
     const term = e.target.value.toLowerCase();
     setSearchTerm(term);
@@ -79,7 +88,6 @@ const DoctorDashboard = () => {
     );
   };
 
-  // 📌 Функция получения полного имени пациента
   const getPatientFullName = (patient) => {
     return `${patient.fname || ""} ${patient.lname || ""} ${patient.mname || ""}`.trim() || "Неизвестный пациент";
   };
@@ -87,6 +95,26 @@ const DoctorDashboard = () => {
   return (
       <div className="p-6 bg-gray-100 min-h-screen">
         <h1 className="text-2xl font-bold mb-4">Панель врача</h1>
+        
+        {/* Информационная плашка о докторе */}
+        <div className="bg-white p-4 shadow-md rounded-lg mb-4 w-[50%]">
+          {isLoading ? (
+            <div>
+              <p>Загрузка...</p>
+              <p className="text-gray-500">Больница не найдена</p>
+            </div>
+          ) : (
+            <div>
+              <div className="font-medium">{doctorData?.name || "Имя не указано"}</div>
+              <div className="text-gray-500">{doctorData?.speciality || "Специальность не указана"}</div>
+              <div className="text-gray-500 mt-1">
+                {doctorData?.hospitals && doctorData.hospitals.length > 0 
+                  ? doctorData.hospitals[0].name 
+                  : "Больница не найдена"}
+              </div>
+            </div>
+          )}
+        </div>
 
         <div className="grid grid-cols-3 gap-4">
           {/* 🔹 Календарь записей */}
