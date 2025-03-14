@@ -192,10 +192,10 @@ const RecipeModalButton = ({ userId }) => {
                                                 {drugSuggestions.map((drug, i) => (
                                                     <li
                                                         key={i}
-                                                        onClick={() => selectDrug(drug.name, index)}
+                                                        onClick={() => selectDrug(drug, index)}
                                                         className="p-2 hover:bg-gray-200 cursor-pointer"
                                                     >
-                                                        {drug.name}
+                                                        {drug}
                                                     </li>
                                                 ))}
                                             </ul>
