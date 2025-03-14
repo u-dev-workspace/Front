@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51a8e747-d4e0-4541-a2fb-9321f713eade" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/4604e98fab2c062924c962ffd532fc5d8448de6d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/4604e98fab2c062924c962ffd532fc5d8448de6d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hakaton-front/pages/RecipeModalButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/pages/RecipeModalButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75e06e9630ec9ceb894366f81ae1160ff085fcdd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75e06e9630ec9ceb894366f81ae1160ff085fcdd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/pages/UserStatistics.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/pages/UserStatistics.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +87,7 @@
       <workItem from="1741853293715" duration="3465000" />
       <workItem from="1741860869402" duration="26997000" />
       <workItem from="1741965062692" duration="2179000" />
-      <workItem from="1741975227268" duration="733000" />
+      <workItem from="1741975227268" duration="4498000" />
     </task>
     <servers />
   </component>
