@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51a8e747-d4e0-4541-a2fb-9321f713eade" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/117026cb061c88a8d5a51f2c6c861c0463fe69c2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e6ff9b3f0f3b2443b7b5ce68569b0e5755df7a4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e6ff9b3f0f3b2443b7b5ce68569b0e5755df7a4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/1/117026cb061c88a8d5a51f2c6c861c0463fe69c2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hakaton-front/pages/AssignToHospitalButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/pages/AssignToHospitalButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hakaton-front/pages/DoctorDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hakaton-front/pages/DoctorDashboard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +83,8 @@
       <workItem from="1741853284245" duration="4000" />
       <workItem from="1741853293715" duration="3465000" />
       <workItem from="1741860869402" duration="26997000" />
-      <workItem from="1741965062692" duration="1029000" />
+      <workItem from="1741965062692" duration="2179000" />
+      <workItem from="1741975227268" duration="321000" />
     </task>
     <servers />
   </component>

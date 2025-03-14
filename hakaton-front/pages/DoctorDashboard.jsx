@@ -53,6 +53,19 @@ const DoctorDashboard = () => {
     fetchData();
   }, []);
 
+  const formatDateTime = (isoString) => {
+    const date = new Date(isoString);
+
+    // Получаем день месяца
+
+    // Получаем часы и минуты, дополняем нулями, если нужно
+    const hours = String(date.getUTCHours()).padStart(2, '0');
+    const minutes = String(date.getUTCMinutes()).padStart(2, '0');
+
+    return `${hours}:${minutes}`;
+  };
+
+
   const groupedAppointments = useMemo(() => {
     return appointments.reduce((acc, appointment) => {
       if (!appointment.dateTimeISO) {
@@ -131,7 +144,7 @@ const DoctorDashboard = () => {
                     groupedAppointments[selectedDate].map((app) => (
                         <li key={app._id} className="border p-2 rounded mt-2">
                           <p><strong>Пациент:</strong> {app.user?.fname || "Неизвестно"}</p>
-                          <p><strong>Время:</strong> {moment(app.dateTimeISO).format("HH:mm")}</p>
+                          <p><strong>Время:</strong> {formatDateTime(app.dateTimeISO)}</p>
                         </li>
                     ))
                 ) : (
