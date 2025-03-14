@@ -41,7 +41,5 @@ V
 &hakaton-front/pages/SupervisorInfo.jsx,e\8\e875e719e2969a78c793332f3cdd5ea15374e2a9
 Y
 )hakaton-front/pages/RecipeModalButton.jsx,4\6\4604e98fab2c062924c962ffd532fc5d8448de6d
-P
- hakaton-front/pages/UserStat.jsx,1\1\117026cb061c88a8d5a51f2c6c861c0463fe69c2
 V
 &hakaton-front/pages/UserStatistics.jsx,7\5\75e06e9630ec9ceb894366f81ae1160ff085fcdd

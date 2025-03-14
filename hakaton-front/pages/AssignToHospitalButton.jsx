@@ -45,7 +45,7 @@ const AssignToHospitalButton = ({ userId, userType }) => {
                     Authorization: `Bearer ${token}`
                 }});
             toast.success(
-  ` ${serType === "doctor" ? "Доктор" : "Пациент"} успешно добавлен!`, 
+  ` ${userType === "doctor" ? "Доктор" : "Пациент"} успешно добавлен!`,
   { position: "top-right", autoClose: 3000 }
 );
 
@@ -53,7 +53,7 @@ const AssignToHospitalButton = ({ userId, userType }) => {
         } catch (error) {
             console.error("Ошибка при привязке:", error);
             toast.success(
-  ` ${serType === "doctor" ? "Доктор" : "Пациент"} не добавлен`, 
+  ` ${userType === "doctor" ? "Доктор" : "Пациент"} не добавлен`,
   { position: "top-right", autoClose: 3000 }
 );
 

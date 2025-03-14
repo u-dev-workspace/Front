@@ -144,7 +144,7 @@ const DoctorsTable = () => (
                 <td className="p-2">{doctor.fname}</td>
                 <td className="p-2">{doctor.phone || "Не указан"}</td>
                 <td className="p-2">{doctor.speciality}</td>
-                <td className="p-2">{Array.isArray(doctor.hospital) ? doctor.hospital.map(h => h.name).join(" | ") : "Нет"}</td>
+                <td className="p-2">{Array.isArray(doctor.hospitals) ? doctor.hospitals.map(h => h.name).join(" | ") : "Нет"}</td>
                 <td className="p-2">
                     <AssignToHospitalButton userId={doctor._id} userType="doctor" />
                 </td>
